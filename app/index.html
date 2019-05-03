@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graph evolution</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/css-toggle-switch/dist/toggle-switch.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container-fluid" id="my-header">
+    <div class="row">
+        <div class="col-sm-2">
+            <label for="dataset">
+                <strong>Dataset</strong>
+            </label>
+            <select class="form-control" id="dataset">
+                <option value="data/iris.json">Iris</option>
+                <option value="data/titanic.json">Titanic</option>
+                <option value="data/sonar.json">Sonar</option>
+            </select>
+        </div>
+        <div class="col-sm-2 offset-sm-1">
+            <label>
+                <strong>
+                    P(Mutation) = <span id="mutation-probability">33</span> %
+                </strong>
+            </label>
+            <input id="mutation" type="range" min="0" max="100" value="33" class="range"/>
+        </div>
+        <div class="col-sm-2">
+            <label>
+                <strong>
+                    P(Crossover) = <span id="crossover-probability">33</span> %
+                </strong>
+            </label>
+            <input id="crossover" type="range" min="0" max="100" value="33" class="range"/>
+        </div>
+        <div class="col-sm-2">
+
+            <strong>
+                Surrogate Model
+            </strong>
+            <label class="switch-light">
+                <input type="checkbox">
+                <span class="alert alert-light">
+                    <span>Off</span>
+                    <span>On</span>
+                    <a class="btn btn-primary"></a>
+                </span>
+            </label>
+        </div>
+        <div class="col-sm-2 offset-sm-1">
+            <label for="nextiteration">
+                <strong>
+                    Next iteration
+                </strong>
+            </label>
+            <button id="nextiteration" type="button" class="btn btn-primary my-run">
+                <i class="fa fa-refresh fa-spin hidden"></i> RUN
+            </button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="my-content">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="vis" data-id="0"></div>
+        </div>
+        <div class="col-sm-3">
+            <div class="vis" data-id="1"></div>
+        </div>
+        <div class="col-sm-3">
+            <div class="vis" data-id="2"></div>
+        </div>
+        <div class="col-sm-3">
+            <div class="vis" data-id="3"></div>
+        </div>
+        <div class="col-sm-3">
+            <div class="vis" data-id="4"></div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="vis" data-id="5"></div>
+        </div>
+        <div class="col-sm-3">
+            <div class="vis" data-id="6"></div>
+        </div>
+        <div class="col-sm-3">
+            <div class="vis" data-id="7"></div>
+        </div>
+    </div>
+</div>
+<div id="modalForDisablingEvents">
+    <i class="fa fa-refresh fa-spin"></i>
+</div>
+<div id="footer" class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <!--Controls: Left Mouse Click & Right Mouse Click
+            <br>-->
+            Petr Hanzl | CTU Faculty of Information Technology
+        </div>
+    </div>
+</div>
+    <script>window.$ = window.jQuery = require('../node_modules/jquery/dist/jquery.min.js')</script>
+    <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="vega/vega.js"></script>
+    <script src="vega/vega-lite.js"></script>
+    <script src="vega/vega-embed.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

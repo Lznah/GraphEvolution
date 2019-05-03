@@ -1,0 +1,79 @@
+$bgcolor: #f8f8f8
+$bgcolor-darker: #c8c8c8
+$box-border-color: #e8e8e8
+$box-selected-positive: #28a745
+$box-selected-negative: #dc3545
+
+.vega-actions
+  display: none
+
+#my-header
+  background-color: $bgcolor
+  border-bottom: 1px solid $box-border-color
+
+  .switch-light
+    margin-top: 8px
+
+  .form-control[type=range]
+    padding: .375rem 0rem
+
+  select.form-control
+    height: 32px
+
+  .alert.alert-light
+    border: 1px solid #ced4da
+    border-radius: .25rem
+
+  .my-run
+    width: 100%
+    .fa
+      float: left
+      margin-top: 3px
+      margin-right: -26px
+      padding: 0
+      font-size: 1em
+    .hidden
+      display: none
+
+  .row div[class^=col-]:first-child, .row div[class^=col-]:last-child
+    background-color: $bgcolor-darker
+
+  .row div
+    padding-top: 20px
+
+
+#my-content
+  padding-top: 5px
+
+  .row .vis
+    border: 1px solid $box-border-color
+    text-align: center
+    margin-top: 15px
+    margin-bottom: 15px
+
+  .row .vis.selectedPositive
+    box-shadow: inset 0px 0px 0px 3px $box-selected-positive
+
+  .row .vis.selectedNegative
+    box-shadow: inset 0px 0px 0px 3px $box-selected-negative
+
+#modalForDisablingEvents
+  z-index: 5000
+  width: 100%
+  position: absolute
+  top: 110px
+  left: 0
+  background-color: #c8c8c8
+  opacity: 0.3
+  display: none
+  text-align: center
+  .fa
+    position: absolute
+    top: 50%
+    font-size: 150px
+    margin-top: -75px
+    margin-left: -75px
+
+#footer
+  text-align: center
+  font-size: 0.7em

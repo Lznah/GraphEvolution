@@ -1,0 +1,23 @@
+{
+  "name": "graphevolution",
+  "version": "1.0.0",
+  "description": "Interactive evolutinary algorithm for evolving grammar for graph visualisation Vega.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Petr Hanzl",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.8.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "css-toggle-switch": "^4.1.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.0",
+    "vega-embed": "^3.7.2",
+    "vega-lite": "^2.4.1"
+  }
+}
