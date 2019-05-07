@@ -1,4 +1,5 @@
 'use strict'
+const {Individual} = require("./individual.js");
 
 class GrammarEvolution{
     constructor() {
@@ -6,8 +7,10 @@ class GrammarEvolution{
         this.mutationRate = 0;
         this.crossoverRate = 0;
     }
-    initPopulation(populationSize) {
+    initPopulation(populationSize, UIparameters) {
         this.populationSize = populationSize;
+        this.chosenColumns = UIparameters.chosenColumns;
+        Individual.prototype.chosenColumns = UIparameters.chosenColumns;
         for(var i=0; i < populationSize; i++) {
             this.population[i] = new Individual();
         }
@@ -62,6 +65,8 @@ class GrammarEvolution{
     repair(individual) {
         individual.removeEpsilons(individual.tree);
         individual.checkProperTypeFields(individual.tree);
+        Individual.prototype.usedColumns = {};
+        individual.checkUsedColumns(individual.tree);
     }
 
     crossover(individual1, individual2) {
@@ -70,8 +75,6 @@ class GrammarEvolution{
         let nodesOfIndividual2 = individual2.getNodes(individual2.tree["start"]);
         let nodesOfIndividual2Unique = nodesOfIndividual2.unique();
         let matchingNodes = nodesOfIndividual1.diff(nodesOfIndividual2);
-        console.log("Matching nodes count: " + matchingNodes.length);
-        console.log(individual1,nodesOfIndividual1,nodesOfIndividual1Unique,nodesOfIndividual2,nodesOfIndividual2Unique,matchingNodes);
         if( Math.random()*100 > this.mutationRate ) {
             let randomNodeForCrossoverPosition = Math.floor(Math.random()*matchingNodes.length);
             let randomNodeForCrossover = matchingNodes[randomNodeForCrossoverPosition];
@@ -91,8 +94,6 @@ class GrammarEvolution{
             let getSubtreeFromIndividual2 = individual2.getRandomSubTreeByName(individual2.tree["start"]["encoding"], randomNodeForCrossover, randomNodeFromRandomMatchingNodesForIndividual2);
             let randomNodeFromRandomMatchingNodesForIndividual1 = Math.floor(Math.random()*randomNodeCountInIndividual1Tree);
             individual1.setRandomSubTreeByName(individual1.tree["start"]["encoding"], randomNodeForCrossover, randomNodeFromRandomMatchingNodesForIndividual1, getSubtreeFromIndividual2);
-            console.log(randomNodeForCrossoverPosition,randomNodeForCrossover,randomNodeCountInIndividual1Tree,randomNodeCountInIndividual2Tree,randomNodeFromRandomMatchingNodesForIndividual2,getSubtreeFromIndividual2,randomNodeFromRandomMatchingNodesForIndividual1);
-            console.log(JSON.stringify(individual1));
         }
     }
 

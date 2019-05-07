@@ -1,9 +1,9 @@
 # GraphEvolution
 This is a repository of a prototype, which has made to demonstrate Interactive Evolutionary Computation for my bachelor thesis. The text of this thesis can be found here: https://github.com/Lznah/thesis
 
-##Build
+## Build
 npm start
 
-##Prerequisites
+## Prerequisites
 Node.js - https://nodejs.org/
 Electron.js - https://electronjs.org

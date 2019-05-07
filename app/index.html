@@ -10,101 +10,134 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="container-fluid" id="my-header">
-    <div class="row">
-        <div class="col-sm-2">
-            <label for="dataset">
-                <strong>Dataset</strong>
-            </label>
-            <select class="form-control" id="dataset">
-                <option value="data/iris.json">Iris</option>
-                <option value="data/titanic.json">Titanic</option>
-                <option value="data/sonar.json">Sonar</option>
-            </select>
-        </div>
-        <div class="col-sm-2 offset-sm-1">
-            <label>
-                <strong>
-                    P(Mutation) = <span id="mutation-probability">33</span> %
-                </strong>
-            </label>
-            <input id="mutation" type="range" min="0" max="100" value="33" class="range"/>
-        </div>
-        <div class="col-sm-2">
-            <label>
-                <strong>
-                    P(Crossover) = <span id="crossover-probability">33</span> %
-                </strong>
-            </label>
-            <input id="crossover" type="range" min="0" max="100" value="33" class="range"/>
-        </div>
-        <div class="col-sm-2">
-
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2 flex-column d-flex" id="my-header">
+      <div id="logo">
+        <img src="img/logo.png" />
+      </div>
+      <div class="header-nextiteration">
+        <label>
             <strong>
-                Surrogate Model
+                P(Mutation) = <span id="mutation-probability">5</span> %
             </strong>
-            <label class="switch-light">
-                <input type="checkbox">
-                <span class="alert alert-light">
-                    <span>Off</span>
-                    <span>On</span>
-                    <a class="btn btn-primary"></a>
-                </span>
-            </label>
+        </label>
+        <input id="mutation" type="range" min="0" max="100" value="5" class="range"/>
+
+        <label>
+            <strong>
+                P(Crossover) = <span id="crossover-probability">33</span> %
+            </strong>
+        </label>
+        <input id="crossover" type="range" min="0" max="100" value="33" class="range"/>
+
+        <label for="nextiteration">
+            <strong>
+                Next iteration
+            </strong>
+        </label>
+        <button id="nextiteration" type="button" class="btn btn-primary my-run">
+            <i class="fa fa-refresh fa-spin hidden"></i> RUN
+        </button>
+      </div>
+
+      <div id="header-dataset">
+        <label for="dataset">
+            <strong>Dataset</strong>
+        </label>
+        <select class="form-control" id="dataset">
+            <option value="data/iris.json">Iris</option>
+            <option value="data/titanic.json">Titanic</option>
+            <option value="data/sonar.json">Sonar</option>
+        </select>
+      </div>
+      <div style="overflow-y: scroll; position: relative" class="flex-grow-1 flex-column" id="columns">
+        <strong>Columns</strong>
+        <ul class="list-group">
+        </ul>
+        <div class="modalForDisablingEvents2">
         </div>
-        <div class="col-sm-2 offset-sm-1">
-            <label for="nextiteration">
-                <strong>
-                    Next iteration
-                </strong>
-            </label>
-            <button id="nextiteration" type="button" class="btn btn-primary my-run">
-                <i class="fa fa-refresh fa-spin hidden"></i> RUN
-            </button>
+      </div>
+      <div id="header-footer">
+          <!--Controls: Left Mouse Click & Right Mouse Click
+          <br>-->
+          Petr Hanzl | CTU Faculty of Information Technology
+      </div>
+    </div>
+
+    <div class="col-sm-10" id="my-content">
+        <div class="dropdown-menu dropdown-menu-sm" id="context-menu">
+          <a class="dropdown-item" id="export-json">Export JSON</a>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="vis" data-id="0" style="visibility: hidden"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="vis" data-id="1" style="visibility: hidden"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="vis" data-id="2" style="visibility: hidden"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="vis" data-id="3" style="visibility: hidden"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="vis" data-id="4" style="visibility: hidden"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="vis" data-id="5" style="visibility: hidden"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="vis" data-id="6" style="visibility: hidden"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="vis" data-id="7" style="visibility: hidden"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="vis" data-id="8" style="visibility: hidden"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="vis" data-id="9" style="visibility: hidden"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="vis" data-id="10" style="visibility: hidden"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="vis" data-id="11" style="visibility: hidden"></div>
+            </div>
+        </div>
+        <div class="modalForDisablingEvents">
+            <i class="fa fa-refresh fa-spin"></i>
         </div>
     </div>
-</div>
-<div class="container-fluid" id="my-content">
-    <div class="row">
-        <div class="col-sm-3">
-            <div class="vis" data-id="0"></div>
-        </div>
-        <div class="col-sm-3">
-            <div class="vis" data-id="1"></div>
-        </div>
-        <div class="col-sm-3">
-            <div class="vis" data-id="2"></div>
-        </div>
-        <div class="col-sm-3">
-            <div class="vis" data-id="3"></div>
-        </div>
-        <div class="col-sm-3">
-            <div class="vis" data-id="4"></div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="export-json-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Export JSON</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
-        <div class="col-sm-3">
-            <div class="vis" data-id="5"></div>
+        <!-- Modal body -->
+        <div class="modal-body">
         </div>
-        <div class="col-sm-3">
-            <div class="vis" data-id="6"></div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="copy-to-clipboard">Copy to clipboard</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         </div>
-        <div class="col-sm-3">
-            <div class="vis" data-id="7"></div>
-        </div>
+
+      </div>
     </div>
 </div>
-<div id="modalForDisablingEvents">
-    <i class="fa fa-refresh fa-spin"></i>
-</div>
-<div id="footer" class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <!--Controls: Left Mouse Click & Right Mouse Click
-            <br>-->
-            Petr Hanzl | CTU Faculty of Information Technology
-        </div>
-    </div>
-</div>
+<script>require('electron-connect').client.create()</script>
     <script>window.$ = window.jQuery = require('../node_modules/jquery/dist/jquery.min.js')</script>
     <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>

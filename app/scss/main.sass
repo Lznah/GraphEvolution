@@ -4,24 +4,27 @@ $box-border-color: #e8e8e8
 $box-selected-positive: #28a745
 $box-selected-negative: #dc3545
 
+
 .vega-actions
   display: none
 
 #my-header
+  font-size: 0.7em
   background-color: $bgcolor
-  border-bottom: 1px solid $box-border-color
+  padding: 0
 
-  .switch-light
-    margin-top: 8px
+  > div
+    padding: 10px 10px
+    border-top: 2px $box-border-color solid
 
-  .form-control[type=range]
-    padding: .375rem 0rem
+  > div:first-child
+    border-top: none
 
   select.form-control
     height: 32px
 
   .alert.alert-light
-    border: 1px solid #ced4da
+    border: 1px solid blue
     border-radius: .25rem
 
   .my-run
@@ -35,14 +38,34 @@ $box-selected-negative: #dc3545
     .hidden
       display: none
 
-  .row div[class^=col-]:first-child, .row div[class^=col-]:last-child
-    background-color: $bgcolor-darker
-
   .row div
     padding-top: 20px
 
+  label
+    margin: 10px 0px 5px 0px
+
+#logo img
+  width: 100%
+
+#my-header  .list-group
+    max-height: 300px
+    margin-bottom: 10px
+    overflow-y:scroll
+    -webkit-overflow-scrolling: touch
+
+#my-header .list-group-item
+  padding: .2rem .5rem
+
+#my-header .list-group-item strong
+  width: 45%
+  display: inline-block
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
 
 #my-content
+  position: relative
   padding-top: 5px
 
   .row .vis
@@ -57,12 +80,14 @@ $box-selected-negative: #dc3545
   .row .vis.selectedNegative
     box-shadow: inset 0px 0px 0px 3px $box-selected-negative
 
-#modalForDisablingEvents
-  z-index: 5000
+
+.modalForDisablingEvents
+  z-index: 10
   width: 100%
+  height: 100%
   position: absolute
-  top: 110px
-  left: 0
+  right: 0
+  top: 0
   background-color: #c8c8c8
   opacity: 0.3
   display: none
@@ -74,6 +99,24 @@ $box-selected-negative: #dc3545
     margin-top: -75px
     margin-left: -75px
 
-#footer
+.modalForDisablingEvents2
+  z-index: 10
+  width: 100%
+  height: 100%
+  position: absolute
+  right: 0
+  top: 0
+  background-color: #c8c8c8
+  opacity: 0.3
+  display: none
+  text-align: center
+  .fa
+    position: absolute
+    top: 50%
+    font-size: 150px
+    margin-top: -75px
+    margin-left: -75px
+
+#header-footer
   text-align: center
   font-size: 0.7em

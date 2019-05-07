@@ -6,17 +6,15 @@ const fs = require('fs');
 const $ = require('jquery');
 const {GrammarEvolution} = require("./grammar-evolution.js");
 const grammar = require("./grammar.js").grammar;
-const {Individual} = require("./individual.js");
 const path = require('path');
 var evolution = new GrammarEvolution();
 
 
 function setAttributes(UIparameters) {
-    console.log(path.join(__dirname, UIparameters.dataset));
     let dataset = JSON.parse(fs.readFileSync(path.join(__dirname, UIparameters.dataset)));
     let fields = [];
-    $.each(dataset[0], function (key, val) {
-        fields.push([key]);
+    $.each(Object.keys(UIparameters.chosenColumns), function (key, val) {
+        fields.push([val]);
     })
     grammar.Expressions.field = fields;
 }
@@ -26,13 +24,10 @@ ipc.on('init-visualisations', function (event, jsonString, fromWindowId) {
     let fromWindow = BrowserWindow.fromId(fromWindowId);
     let UIparameters = JSON.parse(jsonString);
     setAttributes(UIparameters);
-    let populationSize = 8;
-    evolution.initPopulation(populationSize);
+    let populationSize = 12;
+    evolution.initPopulation(populationSize, UIparameters);
     // sem prijde generovani novych schemat
-    console.log(path.join(__dirname, UIparameters.dataset));
-    console.log(__dirname);
     var data = JSON.parse(fs.readFileSync(path.join(__dirname, UIparameters.dataset)));
-    console.log(data);
     let schemaTemplate = {
         "width": UIparameters.squareSize,
         "height": UIparameters.squareSize,
@@ -63,7 +58,6 @@ ipc.on('next-visualisations', function (event, jsonString, fromWindowId) {
     evolution.nextPopulation(UIparameters);
     // sem prijde generovani novych schemat
     var data = JSON.parse(fs.readFileSync(path.join(__dirname, UIparameters.dataset)));
-    console.log(data);
     let schemaTemplate = {
         "width": UIparameters.squareSize,
         "height": UIparameters.squareSize,
@@ -71,7 +65,7 @@ ipc.on('next-visualisations', function (event, jsonString, fromWindowId) {
             "type": "fit",
             "contains": "padding"
         },
-        "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+        //"$schema": "https://vega.github.io/schema/vega-lite/v2.json",
         "data": {"values": data},
         "mark" : null,
         "encoding" : null
@@ -80,11 +74,9 @@ ipc.on('next-visualisations', function (event, jsonString, fromWindowId) {
     for(let i=0; i<evolution.populationSize; i++) {
         let individualGene = evolution.getIndividual(i).getGene();
         let deepCopySchema = $.extend(true, {}, schemaTemplate);
-        console.log(individualGene,deepCopySchema);
         deepCopySchema["mark"] = individualGene["start"]["mark"];
         deepCopySchema["encoding"] = individualGene["start"]["encoding"];
         schemas[i] = deepCopySchema;
     }
-    console.log(schemas);
     fromWindow.webContents.send('show-visualisations', JSON.stringify(schemas));
 })

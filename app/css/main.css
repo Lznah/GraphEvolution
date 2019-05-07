@@ -2,17 +2,19 @@
   display: none; }
 
 #my-header {
+  font-size: 0.7em;
   background-color: #f8f8f8;
-  border-bottom: 1px solid #e8e8e8; }
-  #my-header .switch-light {
-    margin-top: 8px; }
-  #my-header .form-control[type=range] {
-    padding: 0.375rem 0rem; }
+  padding: 0; }
+  #my-header > div {
+    padding: 10px 10px;
+    border-top: 2px #e8e8e8 solid; }
+  #my-header > div:first-child {
+    border-top: none; }
   #my-header select.form-control {
     height: 32px; }
   #my-header .alert.alert-light {
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem; }
+    border: 1px solid blue;
+    border-radius: .25rem; }
   #my-header .my-run {
     width: 100%; }
     #my-header .my-run .fa {
@@ -23,12 +25,31 @@
       font-size: 1em; }
     #my-header .my-run .hidden {
       display: none; }
-  #my-header .row div[class^=col-]:first-child, #my-header .row div[class^=col-]:last-child {
-    background-color: #c8c8c8; }
   #my-header .row div {
     padding-top: 20px; }
+  #my-header label {
+    margin: 10px 0px 5px 0px; }
+
+#logo img {
+  width: 100%; }
+
+#my-header .list-group {
+  max-height: 300px;
+  margin-bottom: 10px;
+  -webkit-overflow-scrolling: touch; }
+
+#my-header .list-group-item {
+  padding: .2rem .5rem; }
+
+#my-header .list-group-item strong {
+  width: 45%;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 #my-content {
+  position: relative;
   padding-top: 5px; }
   #my-content .row .vis {
     border: 1px solid #e8e8e8;
@@ -40,25 +61,42 @@
   #my-content .row .vis.selectedNegative {
     box-shadow: inset 0px 0px 0px 3px #dc3545; }
 
-#modalForDisablingEvents {
-  z-index: 5000;
+.modalForDisablingEvents {
+  z-index: 10;
   width: 100%;
+  height: 100%;
   position: absolute;
-  top: 110px;
-  left: 0;
+  right: 0;
+  top: 0;
   background-color: #c8c8c8;
   opacity: 0.3;
   display: none;
   text-align: center; }
-  #modalForDisablingEvents .fa {
+  .modalForDisablingEvents .fa {
     position: absolute;
     top: 50%;
     font-size: 150px;
     margin-top: -75px;
     margin-left: -75px; }
 
-#footer {
+.modalForDisablingEvents2 {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #c8c8c8;
+  opacity: 0.3;
+  display: none;
+  text-align: center; }
+  .modalForDisablingEvents2 .fa {
+    position: absolute;
+    top: 50%;
+    font-size: 150px;
+    margin-top: -75px;
+    margin-left: -75px; }
+
+#header-footer {
   text-align: center;
   font-size: 0.7em; }
-
-/*# sourceMappingURL=main.css.map */

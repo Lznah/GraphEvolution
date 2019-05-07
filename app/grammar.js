@@ -50,23 +50,21 @@ module.exports = {
         },
         "Expressions": {
             "start": [["mark", "encoding"]],
-            "encoding": [["fill", "opacity", "shape", "size", "color", "stroke","x", "y"]],
+            "encoding": [["fill", "opacity", "shape", "size", "color", "stroke", "x", "y"]], // , "x", "y"
             "mark": [["bar"], ["rect"], ["line"], ["point"], ["area"], ["circle"], ["square"]],
-            "color": [["bin", "field", "sort", "type"], [], []],
-            "fill": [["bin", "field", "sort", "type"], [], []],
-            "opacity": [["bin", "field", "sort", "type"], [], []],
-            "shape": [["bin", "field", "sort", "type"], [], []],
-            "size": [["bin", "field", "sort", "type"], [], []],
-            "stroke": [["bin", "field", "sort", "type"], [], []],
-            "x": [["aggregate", "bin", "field", "sort", "stack", "type"]],
-            "y": [["aggregate", "bin","field", "sort", "stack", "type"], [], []],
+            "color": [["aggregate", "bin", "field", "type"], []],
+            "fill": [["aggregate", "bin", "field", "type"], []],
+            "opacity": [["aggregate", "bin", "field", "type"], []],
+            "shape": [["aggregate", "bin", "field", "type"], []],
+            "size": [["aggregate", "bin", "field", "type"], []],
+            "stroke": [["aggregate", "bin", "field", "type"], []],
+            "x": [["aggregate", "bin", "field", "type"]],
+            "y": [["aggregate", "bin", "field", "type"]],
 
-            "aggregate": [["mean"],["sum"],["median"],["min"],["max"],["count"], [], [], []],
-            "bin": [[true], [], [], []],
+            "aggregate": [["mean"],["sum"],["median"],["min"],["max"],["count"], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []],
+            "bin": [[true], [], [], [], [], [], []],
             "field": [],
-            "type": [["quantitative"], ["ordinal"], ["temporal"], ["nominal"]],
-            "sort": [["ascending"], ["descending"], [], [], []],
-            "stack": [["zero"], ["center"], ["normalize"], [], [], []]
+            "type": [["quantitative"], ["ordinal"], ["nominal"]]
         },
         "StartingSymbol" : ["start"]
     }

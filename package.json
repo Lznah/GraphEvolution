@@ -9,14 +9,18 @@
   "author": "Petr Hanzl",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^1.8.4"
+    "browser-sync": "^2.26.5",
+    "electron": "^1.8.8",
+    "electron-connect": "^0.6.3",
+    "gulp": "^4.0.1",
+    "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "bootstrap": "^4.1.0",
+    "bootstrap": "^4.3.1",
     "css-toggle-switch": "^4.1.0",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
     "vega-embed": "^3.7.2",
     "vega-lite": "^2.4.1"
   }
