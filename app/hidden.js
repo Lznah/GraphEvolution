@@ -65,7 +65,7 @@ ipc.on('next-visualisations', function (event, jsonString, fromWindowId) {
             "type": "fit",
             "contains": "padding"
         },
-        //"$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+        "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
         "data": {"values": data},
         "mark" : null,
         "encoding" : null

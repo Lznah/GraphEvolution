@@ -5,7 +5,6 @@ class GrammarEvolution{
     constructor() {
         this.population = [];
         this.mutationRate = 0;
-        this.crossoverRate = 0;
     }
     initPopulation(populationSize, UIparameters) {
         this.populationSize = populationSize;
@@ -18,7 +17,6 @@ class GrammarEvolution{
 
     nextPopulation(UIparameters) {
         this.mutationRate = UIparameters.mutation;
-        this.crossoverRate = UIparameters.crossover;
         this.clearPopulation(UIparameters.positiveSchemas);
         this.evolve();
     }
@@ -48,62 +46,101 @@ class GrammarEvolution{
 
     evolve() {
         let chosenPositiveCounter = this.population.length
-        while(this.population.length != this.populationSize) {
+        while(this.population.length < this.populationSize) {
             let ancensor1 = this.getRandomIndividual(chosenPositiveCounter);
             let ancensor2 = this.getRandomIndividual(chosenPositiveCounter);
-            let descendant = new Individual(false);
-            descendant.clone(ancensor1);
-            if(this.crossoverRate > Math.floor(Math.random()*100)) {
-                this.crossover(descendant, ancensor2);
+            let descendant1 = new Individual(false);
+            let descendant2 = new Individual(false);
+            descendant1.clone(ancensor1);
+            if(chosenPositiveCounter > 1 && this.population.length < this.populationSize) {
+              descendant2.clone(ancensor2);
+              this.crossover(descendant1, descendant2);
+              this.mutate(descendant2);
+              this.repair(descendant2);
+              this.population.push(descendant2);
             }
-            this.mutate(descendant);
-            this.repair(descendant);
-            this.population.push(descendant);
+            this.mutate(descendant1);
+            this.repair(descendant1);
+            this.population.push(descendant1);
         }
     }
 
     repair(individual) {
         individual.removeEpsilons(individual.tree);
         individual.checkProperTypeFields(individual.tree);
-        Individual.prototype.usedColumns = {};
-        individual.checkUsedColumns(individual.tree);
+        individual.checkEmptyEncodings(individual.tree.start.encoding);
+        individual.checkXY(individual.tree.start.encoding);
+        individual.checkProperTransformations(individual.tree.start.encoding);
+        //individual.checkUsedColumns(individual.tree);
     }
 
-    crossover(individual1, individual2) {
-        let nodesOfIndividual1 = individual1.getNodes(individual1.tree["start"]);
-        let nodesOfIndividual1Unique = nodesOfIndividual1.unique();
-        let nodesOfIndividual2 = individual2.getNodes(individual2.tree["start"]);
-        let nodesOfIndividual2Unique = nodesOfIndividual2.unique();
-        let matchingNodes = nodesOfIndividual1.diff(nodesOfIndividual2);
-        if( Math.random()*100 > this.mutationRate ) {
-            let randomNodeForCrossoverPosition = Math.floor(Math.random()*matchingNodes.length);
-            let randomNodeForCrossover = matchingNodes[randomNodeForCrossoverPosition];
-            let randomNodeCountInIndividual1Tree = 0;
-            for(let i=0; i<nodesOfIndividual1.length; i++) {
-                if(nodesOfIndividual1[i] == randomNodeForCrossover) {
-                    randomNodeCountInIndividual1Tree++;
-                }
-            }
-            let randomNodeCountInIndividual2Tree = 0;
-            for(let i=0; i<nodesOfIndividual2.length; i++) {
-                if(nodesOfIndividual2[i] == randomNodeForCrossover) {
-                    randomNodeCountInIndividual2Tree++;
-                }
-            }
-            let randomNodeFromRandomMatchingNodesForIndividual2 = Math.floor(Math.random()*randomNodeCountInIndividual2Tree);
-            let getSubtreeFromIndividual2 = individual2.getRandomSubTreeByName(individual2.tree["start"]["encoding"], randomNodeForCrossover, randomNodeFromRandomMatchingNodesForIndividual2);
-            let randomNodeFromRandomMatchingNodesForIndividual1 = Math.floor(Math.random()*randomNodeCountInIndividual1Tree);
-            individual1.setRandomSubTreeByName(individual1.tree["start"]["encoding"], randomNodeForCrossover, randomNodeFromRandomMatchingNodesForIndividual1, getSubtreeFromIndividual2);
-        }
+    crossover(descendant1, descendant2) {
+
+      var chosenColumnsArray = Object.keys(Individual.prototype.chosenColumns);
+      for(var i=0; i<chosenColumnsArray.length; i++) {
+        var indexIndividual1 = undefined;
+        var indexIndividual2 = undefined;
+        $.each(descendant1.tree.start.encoding, function(index, elem) {
+          if(typeof index == "undefined") return false;
+          if(elem.field == chosenColumnsArray[i]) {
+            indexIndividual1 = index;
+            return false;
+          }
+        });
+        $.each(descendant2.tree.start.encoding, function(index, elem) {
+          if(typeof index == "undefined") return false;
+          if(elem.field == chosenColumnsArray[i]) {
+            indexIndividual2 = index;
+            return false;
+          }
+        });
+        if(typeof indexIndividual1 == "undefined" || typeof indexIndividual2 == "undefined") return;
+        var tmp = descendant1.tree.start.encoding[indexIndividual1];
+        descendant1.tree.start.encoding[indexIndividual1] = descendant2.tree.start.encoding[indexIndividual2];
+        descendant2.tree.start.encoding[indexIndividual2] = tmp;
+      }
     }
 
 
     mutate(individual) {
-        Individual.prototype.expandRandomNode(individual.tree["start"], this.mutationRate);
+      var tmp = [...grammar.Expressions['field']];
+      Individual.prototype.expandRandomNode(individual.tree["start"], this.mutationRate);
+      this.checkUsedColumns(individual.tree.start.encoding);
+      grammar.Expressions['field'] = [...tmp]
+    }
+
+    checkUsedColumns(encodings) {
+      var usedColumns = {};
+      $.each(encodings, function(index, elem) {
+        if(typeof usedColumns[elem.field] == "undefined") {
+          usedColumns[elem.field] = {
+            count: 0,
+            columns: []
+          };
+        }
+        usedColumns[elem.field].count++;
+        usedColumns[elem.field].columns.push(index);
+      });
+      var notUsedColumns = [];
+      $.each(Individual.prototype.chosenColumns, function(index, elem) {
+        if(typeof usedColumns[index] == "undefined") {
+          notUsedColumns.push(index);
+        }
+      });
+      $.each(usedColumns, function(index, elem) {
+        if(elem.count > 1) {
+          $.each(elem.columns, function(i, e) {
+            encodings[e].field = notUsedColumns[0];
+            notUsedColumns.splice(0, 1);
+            elem.count--;
+            if(elem.count <= 1) return false;
+          });
+        }
+      });
     }
 
     getRandomIndividual(chosenPositiveCounter) {
-        return this.population[Math.floor(Math.random()*chosenPositiveCounter)];
+      return this.population[Math.floor(Math.random()*chosenPositiveCounter)];
     }
     selection() {}
     getFitness() {}

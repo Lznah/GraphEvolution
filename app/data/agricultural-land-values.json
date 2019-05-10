@@ -1,0 +1,810 @@
+[
+  {
+    "State": "Connecticut",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 1997,
+    "Acre Value": 5950
+  },
+  {
+    "State": "New Hampshire",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 1997,
+    "Acre Value": 2250
+  },
+  {
+    "State": "Michigan",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Lake States",
+    "Region or State": "State",
+    "Year": 1997,
+    "Acre Value": 1530
+  },
+  {
+    "State": "Ohio",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Corn Belt",
+    "Region or State": "State",
+    "Year": 1999,
+    "Acre Value": 2220
+  },
+  {
+    "State": "Minnesota",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Lake States",
+    "Region or State": "State",
+    "Year": 2000,
+    "Acre Value": 1320
+  },
+  {
+    "State": "Louisiana",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Delta States",
+    "Region or State": "State",
+    "Year": 2000,
+    "Acre Value": 1310
+  },
+  {
+    "State": "Northeast",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Northeast",
+    "Region or State": "Region",
+    "Year": 2001,
+    "Acre Value": 2830
+  },
+  {
+    "State": "Mountain",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Mountain",
+    "Region or State": "Region",
+    "Year": 2001,
+    "Acre Value": 471
+  },
+  {
+    "State": "Mississippi",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Delta States",
+    "Region or State": "State",
+    "Year": 2002,
+    "Acre Value": 1330
+  },
+  {
+    "State": "Tennessee",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Appalachian",
+    "Region or State": "State",
+    "Year": 2003,
+    "Acre Value": 2400
+  },
+  {
+    "State": "New Mexico",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Mountain",
+    "Region or State": "State",
+    "Year": 2003,
+    "Acre Value": 260
+  },
+  {
+    "State": "New Hampshire",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 2004,
+    "Acre Value": 3250
+  },
+  {
+    "State": "Georgia",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Southeast",
+    "Region or State": "State",
+    "Year": 2004,
+    "Acre Value": 2350
+  },
+  {
+    "State": "Colorado",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Mountain",
+    "Region or State": "State",
+    "Year": 2004,
+    "Acre Value": 775
+  },
+  {
+    "State": "Rhode Island",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 2005,
+    "Acre Value": 12800
+  },
+  {
+    "State": "Wyoming",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Mountain",
+    "Region or State": "State",
+    "Year": 2005,
+    "Acre Value": 340
+  },
+  {
+    "State": "New Hampshire",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 2007,
+    "Acre Value": 4800
+  },
+  {
+    "State": "Idaho",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Mountain",
+    "Region or State": "State",
+    "Year": 2007,
+    "Acre Value": 2480
+  },
+  {
+    "State": "New Jersey",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 2009,
+    "Acre Value": 13800
+  },
+  {
+    "State": "Michigan",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Lake States",
+    "Region or State": "State",
+    "Year": 2009,
+    "Acre Value": 3750
+  },
+  {
+    "State": "Alabama",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Southeast",
+    "Region or State": "State",
+    "Year": 2009,
+    "Acre Value": 2150
+  },
+  {
+    "State": "Colorado",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Mountain",
+    "Region or State": "State",
+    "Year": 2011,
+    "Acre Value": 1100
+  },
+  {
+    "State": "Kansas",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Northern Plains",
+    "Region or State": "State",
+    "Year": 2012,
+    "Acre Value": 1510
+  },
+  {
+    "State": "Maine",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 2014,
+    "Acre Value": 2080
+  },
+  {
+    "State": "Tennessee",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Appalachian",
+    "Region or State": "State",
+    "Year": 2014,
+    "Acre Value": 3600
+  },
+  {
+    "State": "Mississippi",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Delta States",
+    "Region or State": "State",
+    "Year": 2014,
+    "Acre Value": 2340
+  },
+  {
+    "State": "Arizona",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Mountain",
+    "Region or State": "State",
+    "Year": 2014,
+    "Acre Value": 3740
+  },
+  {
+    "State": "Maryland",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 2015,
+    "Acre Value": 7000
+  },
+  {
+    "State": "Appalachian",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Appalachian",
+    "Region or State": "Region",
+    "Year": 2015,
+    "Acre Value": 3730
+  },
+  {
+    "State": "Montana",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Mountain",
+    "Region or State": "State",
+    "Year": 2016,
+    "Acre Value": 900
+  },
+  {
+    "State": "Oregon",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Pacific",
+    "Region or State": "State",
+    "Year": 2016,
+    "Acre Value": 2200
+  },
+  {
+    "State": "New Jersey",
+    "LandCategory": "Farm Real Estate",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 2017,
+    "Acre Value": 12800
+  },
+  {
+    "State": "Pennsylvania",
+    "LandCategory": "Cropland",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 1997,
+    "Acre Value": 2650
+  },
+  {
+    "State": "Northern Plains",
+    "LandCategory": "Cropland",
+    "Region": "Northern Plains",
+    "Region or State": "Region",
+    "Year": 1997,
+    "Acre Value": 633
+  },
+  {
+    "State": "Nebraska",
+    "LandCategory": "Cropland",
+    "Region": "Northern Plains",
+    "Region or State": "State",
+    "Year": 1997,
+    "Acre Value": 1020
+  },
+  {
+    "State": "Kentucky",
+    "LandCategory": "Cropland",
+    "Region": "Appalachian",
+    "Region or State": "State",
+    "Year": 1997,
+    "Acre Value": 1500
+  },
+  {
+    "State": "Southeast",
+    "LandCategory": "Cropland",
+    "Region": "Southeast",
+    "Region or State": "Region",
+    "Year": 1997,
+    "Acre Value": 1610
+  },
+  {
+    "State": "Nebraska",
+    "LandCategory": "Cropland",
+    "Region": "Northern Plains",
+    "Region or State": "State",
+    "Year": 1999,
+    "Acre Value": 1080
+  },
+  {
+    "State": "Minnesota",
+    "LandCategory": "Cropland",
+    "Region": "Lake States",
+    "Region or State": "State",
+    "Year": 2000,
+    "Acre Value": 1280
+  },
+  {
+    "State": "Tennessee",
+    "LandCategory": "Cropland",
+    "Region": "Appalachian",
+    "Region or State": "State",
+    "Year": 2000,
+    "Acre Value": 2120
+  },
+  {
+    "State": "Virginia",
+    "LandCategory": "Cropland",
+    "Region": "Appalachian",
+    "Region or State": "State",
+    "Year": 2000,
+    "Acre Value": 2150
+  },
+  {
+    "State": "Kansas",
+    "LandCategory": "Cropland",
+    "Region": "Northern Plains",
+    "Region or State": "State",
+    "Year": 2001,
+    "Acre Value": 673
+  },
+  {
+    "State": "Idaho",
+    "LandCategory": "Cropland",
+    "Region": "Mountain",
+    "Region or State": "State",
+    "Year": 2007,
+    "Acre Value": 2770
+  },
+  {
+    "State": "Texas",
+    "LandCategory": "Cropland",
+    "Region": "Southern Plains",
+    "Region or State": "State",
+    "Year": 2008,
+    "Acre Value": 1500
+  },
+  {
+    "State": "Nevada",
+    "LandCategory": "Cropland",
+    "Region": "Mountain",
+    "Region or State": "State",
+    "Year": 2008,
+    "Acre Value": 2740
+  },
+  {
+    "State": "Southeast",
+    "LandCategory": "Cropland",
+    "Region": "Southeast",
+    "Region or State": "Region",
+    "Year": 2009,
+    "Acre Value": 3960
+  },
+  {
+    "State": "Georgia",
+    "LandCategory": "Cropland",
+    "Region": "Southeast",
+    "Region or State": "State",
+    "Year": 2009,
+    "Acre Value": 4050
+  },
+  {
+    "State": "Arkansas",
+    "LandCategory": "Cropland",
+    "Region": "Delta States",
+    "Region or State": "State",
+    "Year": 2009,
+    "Acre Value": 1860
+  },
+  {
+    "State": "Texas",
+    "LandCategory": "Cropland",
+    "Region": "Southern Plains",
+    "Region or State": "State",
+    "Year": 2009,
+    "Acre Value": 1480
+  },
+  {
+    "State": "New Jersey",
+    "LandCategory": "Cropland",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 2010,
+    "Acre Value": 13300
+  },
+  {
+    "State": "Texas",
+    "LandCategory": "Cropland",
+    "Region": "Southern Plains",
+    "Region or State": "State",
+    "Year": 2010,
+    "Acre Value": 1510
+  },
+  {
+    "State": "California",
+    "LandCategory": "Cropland",
+    "Region": "Pacific",
+    "Region or State": "State",
+    "Year": 2010,
+    "Acre Value": 8960
+  },
+  {
+    "State": "Northeast",
+    "LandCategory": "Cropland",
+    "Region": "Northeast",
+    "Region or State": "Region",
+    "Year": 2011,
+    "Acre Value": 5200
+  },
+  {
+    "State": "Idaho",
+    "LandCategory": "Cropland",
+    "Region": "Mountain",
+    "Region or State": "State",
+    "Year": 2011,
+    "Acre Value": 2470
+  },
+  {
+    "State": "Illinois",
+    "LandCategory": "Cropland",
+    "Region": "Corn Belt",
+    "Region or State": "State",
+    "Year": 2012,
+    "Acre Value": 6300
+  },
+  {
+    "State": "Pacific",
+    "LandCategory": "Cropland",
+    "Region": "Pacific",
+    "Region or State": "Region",
+    "Year": 2012,
+    "Acre Value": 5310
+  },
+  {
+    "State": "Southeast",
+    "LandCategory": "Cropland",
+    "Region": "Southeast",
+    "Region or State": "Region",
+    "Year": 2013,
+    "Acre Value": 3690
+  },
+  {
+    "State": "Iowa",
+    "LandCategory": "Cropland",
+    "Region": "Corn Belt",
+    "Region or State": "State",
+    "Year": 2014,
+    "Acre Value": 8750
+  },
+  {
+    "State": "Louisiana",
+    "LandCategory": "Cropland",
+    "Region": "Delta States",
+    "Region or State": "State",
+    "Year": 2016,
+    "Acre Value": 2620
+  },
+  {
+    "State": "Mississippi",
+    "LandCategory": "Cropland",
+    "Region": "Delta States",
+    "Region or State": "State",
+    "Year": 2016,
+    "Acre Value": 2680
+  },
+  {
+    "State": "Washington",
+    "LandCategory": "Cropland",
+    "Region": "Pacific",
+    "Region or State": "State",
+    "Year": 2016,
+    "Acre Value": 2760
+  },
+  {
+    "State": "Ohio",
+    "LandCategory": "Cropland",
+    "Region": "Corn Belt",
+    "Region or State": "State",
+    "Year": 2017,
+    "Acre Value": 5780
+  },
+  {
+    "State": "Alabama",
+    "LandCategory": "Cropland",
+    "Region": "Southeast",
+    "Region or State": "State",
+    "Year": 2017,
+    "Acre Value": 3000
+  },
+  {
+    "State": "Delta",
+    "LandCategory": "Cropland",
+    "Region": "Delta States",
+    "Region or State": "Region",
+    "Year": 2017,
+    "Acre Value": 2760
+  },
+  {
+    "State": "Arkansas",
+    "LandCategory": "Cropland",
+    "Region": "Delta States",
+    "Region or State": "State",
+    "Year": 2017,
+    "Acre Value": 2790
+  },
+  {
+    "State": "United States",
+    "LandCategory": "Pasture",
+    "Region": "Continental U.S.",
+    "Region or State": "Region",
+    "Year": 1998,
+    "Acre Value": 489
+  },
+  {
+    "State": "Michigan",
+    "LandCategory": "Pasture",
+    "Region": "Lake States",
+    "Region or State": "State",
+    "Year": 2000,
+    "Acre Value": 1150
+  },
+  {
+    "State": "Indiana",
+    "LandCategory": "Pasture",
+    "Region": "Corn Belt",
+    "Region or State": "State",
+    "Year": 2000,
+    "Acre Value": 1400
+  },
+  {
+    "State": "Ohio",
+    "LandCategory": "Pasture",
+    "Region": "Corn Belt",
+    "Region or State": "State",
+    "Year": 2000,
+    "Acre Value": 1600
+  },
+  {
+    "State": "Northern Plains",
+    "LandCategory": "Pasture",
+    "Region": "Northern Plains",
+    "Region or State": "Region",
+    "Year": 2000,
+    "Acre Value": 230
+  },
+  {
+    "State": "Arizona",
+    "LandCategory": "Pasture",
+    "Region": "Mountain",
+    "Region or State": "State",
+    "Year": 2000,
+    "Acre Value": 360
+  },
+  {
+    "State": "Georgia",
+    "LandCategory": "Pasture",
+    "Region": "Southeast",
+    "Region or State": "State",
+    "Year": 2001,
+    "Acre Value": 2280
+  },
+  {
+    "State": "Indiana",
+    "LandCategory": "Pasture",
+    "Region": "Corn Belt",
+    "Region or State": "State",
+    "Year": 2002,
+    "Acre Value": 1560
+  },
+  {
+    "State": "Ohio",
+    "LandCategory": "Pasture",
+    "Region": "Corn Belt",
+    "Region or State": "State",
+    "Year": 2003,
+    "Acre Value": 1950
+  },
+  {
+    "State": "Southern Plains",
+    "LandCategory": "Pasture",
+    "Region": "Southern Plains",
+    "Region or State": "Region",
+    "Year": 2004,
+    "Acre Value": 624
+  },
+  {
+    "State": "New York",
+    "LandCategory": "Pasture",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 2005,
+    "Acre Value": 820
+  },
+  {
+    "State": "Pacific",
+    "LandCategory": "Pasture",
+    "Region": "Pacific",
+    "Region or State": "Region",
+    "Year": 2005,
+    "Acre Value": 1210
+  },
+  {
+    "State": "United States",
+    "LandCategory": "Pasture",
+    "Region": "Continental U.S.",
+    "Region or State": "Region",
+    "Year": 2005,
+    "Acre Value": 740
+  },
+  {
+    "State": "Southeast",
+    "LandCategory": "Pasture",
+    "Region": "Southeast",
+    "Region or State": "Region",
+    "Year": 2006,
+    "Acre Value": 4300
+  },
+  {
+    "State": "Arkansas",
+    "LandCategory": "Pasture",
+    "Region": "Delta States",
+    "Region or State": "State",
+    "Year": 2006,
+    "Acre Value": 1740
+  },
+  {
+    "State": "Pennsylvania",
+    "LandCategory": "Pasture",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 2007,
+    "Acre Value": 2900
+  },
+  {
+    "State": "Indiana",
+    "LandCategory": "Pasture",
+    "Region": "Corn Belt",
+    "Region or State": "State",
+    "Year": 2008,
+    "Acre Value": 2510
+  },
+  {
+    "State": "Kansas",
+    "LandCategory": "Pasture",
+    "Region": "Northern Plains",
+    "Region or State": "State",
+    "Year": 2008,
+    "Acre Value": 750
+  },
+  {
+    "State": "Appalachian",
+    "LandCategory": "Pasture",
+    "Region": "Appalachian",
+    "Region or State": "Region",
+    "Year": 2008,
+    "Acre Value": 3620
+  },
+  {
+    "State": "Idaho",
+    "LandCategory": "Pasture",
+    "Region": "Mountain",
+    "Region or State": "State",
+    "Year": 2008,
+    "Acre Value": 1610
+  },
+  {
+    "State": "Other States",
+    "LandCategory": "Pasture",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 2009,
+    "Acre Value": 6060
+  },
+  {
+    "State": "Kentucky",
+    "LandCategory": "Pasture",
+    "Region": "Appalachian",
+    "Region or State": "State",
+    "Year": 2009,
+    "Acre Value": 2420
+  },
+  {
+    "State": "Montana",
+    "LandCategory": "Pasture",
+    "Region": "Mountain",
+    "Region or State": "State",
+    "Year": 2010,
+    "Acre Value": 530
+  },
+  {
+    "State": "Texas",
+    "LandCategory": "Pasture",
+    "Region": "Southern Plains",
+    "Region or State": "State",
+    "Year": 2011,
+    "Acre Value": 1430
+  },
+  {
+    "State": "Mountain",
+    "LandCategory": "Pasture",
+    "Region": "Mountain",
+    "Region or State": "Region",
+    "Year": 2011,
+    "Acre Value": 523
+  },
+  {
+    "State": "Wisconsin",
+    "LandCategory": "Pasture",
+    "Region": "Lake States",
+    "Region or State": "State",
+    "Year": 2012,
+    "Acre Value": 2010
+  },
+  {
+    "State": "Corn Belt",
+    "LandCategory": "Pasture",
+    "Region": "Corn Belt",
+    "Region or State": "Region",
+    "Year": 2013,
+    "Acre Value": 2290
+  },
+  {
+    "State": "Ohio",
+    "LandCategory": "Pasture",
+    "Region": "Corn Belt",
+    "Region or State": "State",
+    "Year": 2013,
+    "Acre Value": 3010
+  },
+  {
+    "State": "West Virginia",
+    "LandCategory": "Pasture",
+    "Region": "Appalachian",
+    "Region or State": "State",
+    "Year": 2013,
+    "Acre Value": 1990
+  },
+  {
+    "State": "Nevada",
+    "LandCategory": "Pasture",
+    "Region": "Mountain",
+    "Region or State": "State",
+    "Year": 2013,
+    "Acre Value": "NA"
+  },
+  {
+    "State": "United States",
+    "LandCategory": "Pasture",
+    "Region": "Continental U.S.",
+    "Region or State": "Region",
+    "Year": 2013,
+    "Acre Value": 1170
+  },
+  {
+    "State": "West Virginia",
+    "LandCategory": "Pasture",
+    "Region": "Appalachian",
+    "Region or State": "State",
+    "Year": 2015,
+    "Acre Value": 2020
+  },
+  {
+    "State": "New York",
+    "LandCategory": "Pasture",
+    "Region": "Northeast",
+    "Region or State": "State",
+    "Year": 2016,
+    "Acre Value": 1400
+  },
+  {
+    "State": "Minnesota",
+    "LandCategory": "Pasture",
+    "Region": "Lake States",
+    "Region or State": "State",
+    "Year": 2016,
+    "Acre Value": 1650
+  },
+  {
+    "State": "Ohio",
+    "LandCategory": "Pasture",
+    "Region": "Corn Belt",
+    "Region or State": "State",
+    "Year": 2017,
+    "Acre Value": 3050
+  },
+  {
+    "State": "Northern Plains",
+    "LandCategory": "Pasture",
+    "Region": "Northern Plains",
+    "Region or State": "Region",
+    "Year": 2017,
+    "Acre Value": 1040
+  }
+]

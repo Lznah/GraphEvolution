@@ -4,11 +4,9 @@ const {BrowserWindow} = require('electron').remote;
 const fs = require('fs');
 const ipcRenderer = require('electron').ipcRenderer;
 const path = require('path');
-console.log(""); // wtf? Without this, this script is not reloaded
 var UIparameters = {
     'dataset' : null,
     'mutation' : null,
-    'crossover' : null,
     'squareSize' : null,
     'positiveSchemas' : {},
     'chosenColumns': {},
@@ -23,7 +21,7 @@ var hiddenPath = `file://${path.join(__dirname, 'hidden.html')}`;
 var win = new BrowserWindow({
     width: 1280,
     height: 600,
-    show: true
+    show: false
 })
 win.loadURL( hiddenPath );
 win.webContents.openDevTools();
@@ -32,11 +30,8 @@ win.webContents.on('did-finish-load', () => {
     $(document).ready(function () {
         UIparameters.dataset = $("#dataset").val();
         UIparameters.mutation = $("#mutation").val();
-        UIparameters.crossover = $("#mutation").val();
         UIparameters.squareSize = $('#my-content .vis').first().width();
         loadDataset();
-
-        //win.webContents.send('init-visualisations', JSON.stringify(UIparameters), windowID);
     });
 })
 
@@ -87,14 +82,8 @@ $("#mutation").on("change input", function() {
     UIparameters.mutation = $(this).val();
 })
 
-$("#crossover").on("change input", function() {
-    $("#crossover-probability").text( $(this).val() );
-    UIparameters.crossover = $(this).val();
-})
-
 $("#nextiteration").on("click", function() {
     if( $(this).attr("disabled") != "disabled" ) {
-      console.log(UIparameters.chosenColumns.length);
         if( Object.keys(UIparameters.chosenColumns).length == 0 ) {
           alert("Chose at least one column");
         } else if( Object.keys(UIparameters.chosenColumns).length != 0 &&  !UIparameters.init) {
@@ -123,6 +112,13 @@ $("#nextiteration").on("click", function() {
     }
 });
 
+$(document).on("change", ".selectColumn", function(e) {
+  var column = $(this).attr("data-column");
+  if($(this).closest(".list-group-item").hasClass("bg-primary")) {
+    UIparameters.chosenColumns[column] = $(this).val();
+  }
+});
+
 $("#columns").on("click", ".list-group-item", function(event) {
   if(event.target.nodeName == "SELECT") return;
   var val = $(this).find('strong').text();
@@ -130,9 +126,14 @@ $("#columns").on("click", ".list-group-item", function(event) {
     $(this).removeClass('bg-primary');
     delete UIparameters.chosenColumns[val];
   } else {
+    if(Object.keys(UIparameters.chosenColumns).length >= 8) {
+      alert("Can not map more columns.");
+      return false;
+    }
     UIparameters.chosenColumns[val] = $(this).find('select').val();;
     $(this).addClass('bg-primary');
   }
+  console.log(UIparameters);
 });
 
 $(".vis").on({
@@ -191,12 +192,11 @@ function loadDataset() {
 function reloadColumns(availableColumns) {
   var $columns = $("#columns ul");
   $columns.html("");
-  console.log(availableColumns);
   $.each(availableColumns, function(key, value) {
     var $item = $('<li class="list-group-item"></li>');
     var $name = $('<strong>'+key+'</strong>');
-    var $select = $('<select class="float-right"></select>');
-    var selectOptions = ['quantitative', 'nominal', 'ordinal'];
+    var $select = $('<select class="float-right selectColumn" data-column="'+key+'"></select>');
+    var selectOptions = ['quantitative', 'nominal'];
     $.each(selectOptions, function(k, v) {
       var $option =  $('<option>'+v+'</option>');
       if(v == value ) {

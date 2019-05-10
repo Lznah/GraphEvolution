@@ -1,0 +1,1102 @@
+[
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 58,
+    "reading score": 54,
+    "writing score": 52
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group B",
+    "parental level of education": "some college",
+    "lunch": "free/reduced",
+    "test preparation course": "completed",
+    "math score": 65,
+    "reading score": 75,
+    "writing score": 70
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group C",
+    "parental level of education": "some high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 69,
+    "reading score": 73,
+    "writing score": 73
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group B",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 69,
+    "reading score": 54,
+    "writing score": 55
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group C",
+    "parental level of education": "bachelor's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 67,
+    "reading score": 69,
+    "writing score": 75
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group E",
+    "parental level of education": "associate's degree",
+    "lunch": "free/reduced",
+    "test preparation course": "completed",
+    "math score": 77,
+    "reading score": 69,
+    "writing score": 68
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 53,
+    "reading score": 44,
+    "writing score": 42
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 63,
+    "reading score": 55,
+    "writing score": 63
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "some high school",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 61,
+    "reading score": 57,
+    "writing score": 56
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group A",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 58,
+    "reading score": 70,
+    "writing score": 67
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group B",
+    "parental level of education": "some high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 70,
+    "reading score": 64,
+    "writing score": 72
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 84,
+    "reading score": 77,
+    "writing score": 74
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "bachelor's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 78,
+    "reading score": 82,
+    "writing score": 79
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group C",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 55,
+    "reading score": 69,
+    "writing score": 65
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group C",
+    "parental level of education": "bachelor's degree",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 79,
+    "reading score": 92,
+    "writing score": 89
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group B",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 91,
+    "reading score": 89,
+    "writing score": 92
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "high school",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 63,
+    "reading score": 57,
+    "writing score": 56
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group B",
+    "parental level of education": "master's degree",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 49,
+    "reading score": 53,
+    "writing score": 52
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group A",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 72,
+    "reading score": 73,
+    "writing score": 74
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "some high school",
+    "lunch": "free/reduced",
+    "test preparation course": "completed",
+    "math score": 59,
+    "reading score": 69,
+    "writing score": 65
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "some high school",
+    "lunch": "free/reduced",
+    "test preparation course": "completed",
+    "math score": 80,
+    "reading score": 79,
+    "writing score": 79
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group B",
+    "parental level of education": "high school",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 66,
+    "reading score": 77,
+    "writing score": 70
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group A",
+    "parental level of education": "some high school",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 68,
+    "reading score": 72,
+    "writing score": 64
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group B",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 54,
+    "reading score": 52,
+    "writing score": 51
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 84,
+    "reading score": 80,
+    "writing score": 80
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group E",
+    "parental level of education": "bachelor's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 80,
+    "reading score": 83,
+    "writing score": 83
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group B",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 65,
+    "reading score": 64,
+    "writing score": 62
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "some college",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 71,
+    "reading score": 83,
+    "writing score": 83
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group E",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 62,
+    "reading score": 73,
+    "writing score": 70
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group B",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 70,
+    "reading score": 75,
+    "writing score": 78
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 76,
+    "reading score": 73,
+    "writing score": 68
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group E",
+    "parental level of education": "some college",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 71,
+    "reading score": 76,
+    "writing score": 70
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "some high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 86,
+    "reading score": 73,
+    "writing score": 70
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "some high school",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 56,
+    "reading score": 54,
+    "writing score": 52
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "high school",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 49,
+    "reading score": 57,
+    "writing score": 52
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group A",
+    "parental level of education": "some college",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 28,
+    "reading score": 23,
+    "writing score": 19
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group B",
+    "parental level of education": "some high school",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 24,
+    "reading score": 38,
+    "writing score": 27
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 67,
+    "reading score": 72,
+    "writing score": 67
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group B",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 58,
+    "reading score": 62,
+    "writing score": 59
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 59,
+    "reading score": 60,
+    "writing score": 58
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "bachelor's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 59,
+    "reading score": 70,
+    "writing score": 73
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group A",
+    "parental level of education": "bachelor's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 66,
+    "reading score": 64,
+    "writing score": 62
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 87,
+    "reading score": 100,
+    "writing score": 95
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group E",
+    "parental level of education": "bachelor's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 64,
+    "reading score": 73,
+    "writing score": 70
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 88,
+    "reading score": 99,
+    "writing score": 100
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "high school",
+    "lunch": "free/reduced",
+    "test preparation course": "completed",
+    "math score": 52,
+    "reading score": 57,
+    "writing score": 56
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "some high school",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 89,
+    "reading score": 88,
+    "writing score": 82
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "some college",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 65,
+    "reading score": 58,
+    "writing score": 49
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "associate's degree",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 26,
+    "reading score": 31,
+    "writing score": 38
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group C",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 83,
+    "reading score": 85,
+    "writing score": 90
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group B",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 73,
+    "reading score": 71,
+    "writing score": 68
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "some college",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 68,
+    "reading score": 68,
+    "writing score": 61
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group C",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 64,
+    "reading score": 64,
+    "writing score": 70
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group B",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 54,
+    "reading score": 64,
+    "writing score": 68
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group E",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 95,
+    "reading score": 89,
+    "writing score": 92
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group B",
+    "parental level of education": "some high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 82,
+    "reading score": 82,
+    "writing score": 80
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "bachelor's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 69,
+    "reading score": 58,
+    "writing score": 57
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "master's degree",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 54,
+    "reading score": 59,
+    "writing score": 50
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group E",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 68,
+    "reading score": 60,
+    "writing score": 59
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group E",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 79,
+    "reading score": 88,
+    "writing score": 94
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group E",
+    "parental level of education": "bachelor's degree",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 85,
+    "reading score": 66,
+    "writing score": 71
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group A",
+    "parental level of education": "some high school",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 92,
+    "reading score": 100,
+    "writing score": 97
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "some high school",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 79,
+    "reading score": 76,
+    "writing score": 65
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group B",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 48,
+    "reading score": 43,
+    "writing score": 45
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group A",
+    "parental level of education": "bachelor's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 91,
+    "reading score": 96,
+    "writing score": 92
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "master's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 54,
+    "reading score": 60,
+    "writing score": 63
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group E",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 61,
+    "reading score": 64,
+    "writing score": 62
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "some college",
+    "lunch": "free/reduced",
+    "test preparation course": "completed",
+    "math score": 69,
+    "reading score": 60,
+    "writing score": 63
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "bachelor's degree",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 94,
+    "reading score": 90,
+    "writing score": 91
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group C",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 65,
+    "reading score": 77,
+    "writing score": 74
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 61,
+    "reading score": 48,
+    "writing score": 46
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group E",
+    "parental level of education": "high school",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 64,
+    "reading score": 62,
+    "writing score": 68
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 85,
+    "reading score": 86,
+    "writing score": 98
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 67,
+    "reading score": 72,
+    "writing score": 74
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group B",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 60,
+    "reading score": 68,
+    "writing score": 60
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group C",
+    "parental level of education": "bachelor's degree",
+    "lunch": "free/reduced",
+    "test preparation course": "completed",
+    "math score": 66,
+    "reading score": 74,
+    "writing score": 81
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group A",
+    "parental level of education": "bachelor's degree",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 62,
+    "reading score": 72,
+    "writing score": 65
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "master's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 81,
+    "reading score": 81,
+    "writing score": 84
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group B",
+    "parental level of education": "some high school",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 60,
+    "reading score": 70,
+    "writing score": 74
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group C",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 76,
+    "reading score": 76,
+    "writing score": 74
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 69,
+    "reading score": 64,
+    "writing score": 68
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group E",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 84,
+    "reading score": 95,
+    "writing score": 92
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "some high school",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 78,
+    "reading score": 81,
+    "writing score": 86
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 60,
+    "reading score": 63,
+    "writing score": 59
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group B",
+    "parental level of education": "some high school",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 49,
+    "reading score": 58,
+    "writing score": 55
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group C",
+    "parental level of education": "some college",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 35,
+    "reading score": 44,
+    "writing score": 43
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group B",
+    "parental level of education": "master's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 77,
+    "reading score": 90,
+    "writing score": 84
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group C",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 52,
+    "reading score": 59,
+    "writing score": 62
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "associate's degree",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 68,
+    "reading score": 65,
+    "writing score": 61
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "high school",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 66,
+    "reading score": 74,
+    "writing score": 69
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 62,
+    "reading score": 67,
+    "writing score": 58
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group B",
+    "parental level of education": "bachelor's degree",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 97,
+    "reading score": 97,
+    "writing score": 96
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group B",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 82,
+    "reading score": 84,
+    "writing score": 78
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group E",
+    "parental level of education": "associate's degree",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 90,
+    "reading score": 90,
+    "writing score": 82
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "bachelor's degree",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 63,
+    "reading score": 64,
+    "writing score": 66
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "bachelor's degree",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 55,
+    "reading score": 46,
+    "writing score": 44
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group E",
+    "parental level of education": "associate's degree",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 93,
+    "reading score": 100,
+    "writing score": 95
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "bachelor's degree",
+    "lunch": "free/reduced",
+    "test preparation course": "completed",
+    "math score": 93,
+    "reading score": 100,
+    "writing score": 100
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group D",
+    "parental level of education": "bachelor's degree",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 50,
+    "reading score": 42,
+    "writing score": 48
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group C",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 44,
+    "reading score": 61,
+    "writing score": 52
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group E",
+    "parental level of education": "some high school",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 74,
+    "reading score": 74,
+    "writing score": 72
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group C",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 58,
+    "reading score": 52,
+    "writing score": 54
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group C",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 62,
+    "reading score": 69,
+    "writing score": 69
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 45,
+    "reading score": 63,
+    "writing score": 59
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group C",
+    "parental level of education": "some high school",
+    "lunch": "free/reduced",
+    "test preparation course": "completed",
+    "math score": 65,
+    "reading score": 76,
+    "writing score": 75
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group A",
+    "parental level of education": "high school",
+    "lunch": "free/reduced",
+    "test preparation course": "completed",
+    "math score": 53,
+    "reading score": 50,
+    "writing score": 60
+  },
+  {
+    "gender": "male",
+    "race/ethnicity": "group A",
+    "parental level of education": "high school",
+    "lunch": "standard",
+    "test preparation course": "none",
+    "math score": 57,
+    "reading score": 51,
+    "writing score": 54
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "associate's degree",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 55,
+    "reading score": 76,
+    "writing score": 76
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "some college",
+    "lunch": "standard",
+    "test preparation course": "completed",
+    "math score": 68,
+    "reading score": 78,
+    "writing score": 77
+  },
+  {
+    "gender": "female",
+    "race/ethnicity": "group D",
+    "parental level of education": "some college",
+    "lunch": "free/reduced",
+    "test preparation course": "none",
+    "math score": 77,
+    "reading score": 86,
+    "writing score": 86
+  }
+]

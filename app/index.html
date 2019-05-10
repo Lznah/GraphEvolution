@@ -19,17 +19,10 @@
       <div class="header-nextiteration">
         <label>
             <strong>
-                P(Mutation) = <span id="mutation-probability">5</span> %
+                Probability of Change: <span id="mutation-probability">5</span> %
             </strong>
         </label>
         <input id="mutation" type="range" min="0" max="100" value="5" class="range"/>
-
-        <label>
-            <strong>
-                P(Crossover) = <span id="crossover-probability">33</span> %
-            </strong>
-        </label>
-        <input id="crossover" type="range" min="0" max="100" value="33" class="range"/>
 
         <label for="nextiteration">
             <strong>
@@ -49,6 +42,10 @@
             <option value="data/iris.json">Iris</option>
             <option value="data/titanic.json">Titanic</option>
             <option value="data/sonar.json">Sonar</option>
+            <option value="data/agricultural-land-values.json">Agricultural Land Values</option>
+            <option value="data/graduate-admissions.json">Graduate Admissions</option>
+            <option value="data/heart-diseases.json">Heart Diseases</option>
+            <option value="data/students-performance-in-exams.json">Students Performance in Exams</option>
         </select>
       </div>
       <div style="overflow-y: scroll; position: relative" class="flex-grow-1 flex-column" id="columns">
