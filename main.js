@@ -1,7 +1,6 @@
 const {BrowserWindow, app} = require('electron');
 const path = require('path');
 const url = require('url');
-var client = require('electron-connect').client;
 
 let win;
 
@@ -23,8 +22,6 @@ function createWindow() {
     win.on('closed', function() {
         win = null
     });
-
-    client.create(win);
 }
 
 // App Listeners
